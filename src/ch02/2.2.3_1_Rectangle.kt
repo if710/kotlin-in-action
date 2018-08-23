@@ -1,5 +1,7 @@
+//declaração do pacote
 package geometry.shapes
 
+//importa a classe Java correspondente
 import java.util.Random
 
 class Rectangle(val height: Int, val width: Int) {

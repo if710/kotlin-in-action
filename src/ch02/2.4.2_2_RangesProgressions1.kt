@@ -8,6 +8,7 @@ fun fizzBuzz(i: Int) = when {
 }
 
 fun main(args: Array<String>) {
+	//conta de 100 até 1 apenas considerando números pares
     for (i in 100 downTo 1 step 2) {
         print(fizzBuzz(i))
     }

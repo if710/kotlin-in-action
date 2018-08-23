@@ -1,5 +1,6 @@
 package ch03.ex3_3_2_UtilityFunctionsAsExtensions1
 
+//declara uma extension function em Collection<T> (receiver type)
 fun <T> Collection<T>.joinToString(
         separator: String = ", ",
         prefix: String = "",
@@ -7,6 +8,7 @@ fun <T> Collection<T>.joinToString(
 ): String {
     val result = StringBuilder(prefix)
 
+    //this é o receiver object
     for ((index, element) in this.withIndex()) {
         if (index > 0) result.append(separator)
         result.append(element)

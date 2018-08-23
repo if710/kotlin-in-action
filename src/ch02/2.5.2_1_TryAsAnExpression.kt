@@ -4,9 +4,11 @@ import java.io.BufferedReader
 import java.io.StringReader
 
 fun readNumber(reader: BufferedReader) {
+    //try sendo usada como expressão
     val number = try {
         Integer.parseInt(reader.readLine())
     } catch (e: NumberFormatException) {
+        //o return encerra a execução do método
         return
     }
 

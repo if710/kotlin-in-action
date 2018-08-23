@@ -8,6 +8,7 @@ fun fizzBuzz(i: Int) = when {
 }
 
 fun main(args: Array<String>) {
+    //iterando sobre o range 1 a 100
     for (i in 1..100) {
         print(fizzBuzz(i))
     }

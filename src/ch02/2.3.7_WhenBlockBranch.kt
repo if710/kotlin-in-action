@@ -1,10 +1,12 @@
-package ch02.ex3_7_WhenBlockBranch
+package ch02.ex3_7_BlocksAsBranchesOfIfAndWhen
 
 interface Expr
 class Num(val value: Int) : Expr
 class Sum(val left: Expr, val right: Expr) : Expr
 
 fun evalWithLogging(e: Expr): Int =
+	//tanto if como when podem ter blocos como branches
+	//no caso, a última expressão é considerada o resultado do bloco
     when (e) {
         is Num -> {
             println("num: ${e.value}")

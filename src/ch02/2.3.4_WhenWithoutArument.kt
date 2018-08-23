@@ -1,9 +1,12 @@
-package ch02.ex3_4_WhenWithoutArument
+package ch02.ex3_4_UsingWhenWithoutAnArgument
 
 import ch02.colors.Color
 import ch02.colors.Color.*
 
+//otimiza a função, pois evita criar instâncias de Set
 fun mixOptimized(c1: Color, c2: Color) =
+	//podemos usar when sem argumentos
+	//neste caso a condição deve ser uma expressão booleana
     when {
         (c1 == RED && c2 == YELLOW) ||
         (c1 == YELLOW && c2 == RED) ->

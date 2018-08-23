@@ -1,8 +1,10 @@
-package ch03.ex6_3_LocalFunctionsAndExtensions2
+package ch03.ex6_3_MakingYourCodeTidyLocalFunctionsAndExtensions2
 
 class User(val id: Int, val name: String, val address: String)
 
 fun saveUser(user: User) {
+    //não precisa passar User como parâmetro, funções locais tem acesso a todas as variáveis
+    //e parâmetros da função que a contém
     fun validate(value: String, fieldName: String) {
         if (value.isEmpty()) {
             throw IllegalArgumentException(

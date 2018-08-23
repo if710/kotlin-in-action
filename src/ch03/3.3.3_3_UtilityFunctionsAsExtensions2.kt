@@ -16,6 +16,7 @@ fun <T> Collection<T>.joinToString(
     return result.toString()
 }
 
+//essa extension function só funciona para coleções de Strings
 fun Collection<String>.join(
         separator: String = ", ",
         prefix: String = "",

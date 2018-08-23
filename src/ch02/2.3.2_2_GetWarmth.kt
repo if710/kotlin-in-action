@@ -5,6 +5,7 @@ enum class Color {
 }
 
 fun getWarmth(color: Color) = when(color) {
+    //podemos combinar múltiplos valores em um único caso
     Color.RED, Color.ORANGE, Color.YELLOW -> "warm"
     Color.GREEN -> "neutral"
     Color.BLUE, Color.INDIGO, Color.VIOLET -> "cold"

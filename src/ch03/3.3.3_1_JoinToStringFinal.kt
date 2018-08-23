@@ -1,6 +1,7 @@
 package ch03.JoinToStringFinal
 
 fun <T> Collection<T>.joinToString(
+	    //valores default para parâmetros
         separator: String = ", ",
         prefix: String = "",
         postfix: String = ""
@@ -18,6 +19,7 @@ fun <T> Collection<T>.joinToString(
 
 fun main(args: Array<String>) {
     val list = listOf(1, 2, 3)
+    //named arguments
     println(list.joinToString(separator = "; ",
           prefix = "(", postfix = ")"))
 }

@@ -3,6 +3,9 @@ package ch03.ValidateUser
 class User(val id: Int, val name: String, val address: String)
 
 fun saveUser(user: User) {
+    
+    //ligeira duplicação de código na validação
+    
     if (user.name.isEmpty()) {
         throw IllegalArgumentException(
             "Can't save user ${user.id}: empty Name")

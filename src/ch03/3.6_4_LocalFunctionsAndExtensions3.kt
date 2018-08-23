@@ -1,7 +1,8 @@
-package ch03.ex6_4_LocalFunctionsAndExtensions3
+package ch03.ex6_4_MakingYourCodeTidyLocalFunctionsAndExtensions3
 
 class User(val id: Int, val name: String, val address: String)
 
+//criando uma extension function
 fun User.validateBeforeSave() {
     fun validate(value: String, fieldName: String) {
         if (value.isEmpty()) {
